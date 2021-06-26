@@ -21,11 +21,12 @@ session = Session(engine)
 
 print(Base.classes.keys())
 
-#Creating a new flask instance called app
+#Creating a new flask called app
 app = Flask(__name__)
 
 #create flask route
 @app.route('/')
+
 def welcome():
 	return(
     '''
@@ -37,21 +38,23 @@ def welcome():
     /api/v1.0/temp/start/end <br/>
     ''')
 
+# create the precipitation route
 @app.route("/api/v1.0/precipitation")
 def precipitation():
-    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
-    precipitation = session.query(\
-        Measurement.date, Measurement.prcp).filter(\
-            Measurement.date >= prev_year).all()
-    precip = {date: prcp for date, prcp in precipitation}
-    return jsonify(precip)
+   prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+   precipitation = session.query(Measurement.date, Measurement.prcp).\
+    filter(Measurement.date >= prev_year).all()
+   precip = {date: prcp for date, prcp in precipitation}
+   return jsonify(precip)
 
+# create the stations route
 @app.route("/api/v1.0/stations")
 def stations():
     results = session.query(Station.station).all()
     stations = list(np.ravel(results))
     return jsonify(stations=stations)
 
+# create the tobs route
 @app.route("/api/v1.0/tobs")
 def temp_monthly():
     prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
@@ -61,24 +64,24 @@ def temp_monthly():
     temps = list(np.ravel(results))
     return jsonify(temps=temps)
 
+# create the temp route
 @app.route("/api/v1.0/temp/<start>")
 
 @app.route("/api/v1.0/temp/<start>/<end>")
 def stats(start=None, end=None):
-    sel = [func.min(Measurement.tobs), func.avg(\
-        Measurement.tobs),func.max(Measurement.tobs)]
+    sel = [func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)]
 
     if not end:
-        results = session.query(*sel).filter(\
-            Measurement.date <= start).all()
+        results = session.query(*sel).\
+            filter(Measurement.date >= start).all()
         temps = list(np.ravel(results))
         return jsonify(temps)
 
-    results = session.query(*sel).filter(\
-        Measurement.date >= start).filter(\
-            Measurement.date <= end).all()
+    results = session.query(*sel).\
+        filter(Measurement.date >= start).\
+        filter(Measurement.date <= end).all()
     temps = list(np.ravel(results))
-    return jsonify(temps=temps)
+    return jsonify(temps)
 
 if __name__ == '__main__':
     app.run()
