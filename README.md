@@ -16,13 +16,13 @@ Therefore, two technical analysis deliverables were done.
 
 - **Deliverable 1: Determine the Summary Statistics for June**
 
-![](June_statistics.png)
+![](Jhttps://github.com/Bayan-daux/Surfs_Up/blob/main/June_statistics.PNG)
 
 Fig. 1 - June Temperature Statistic
 
 - **Deliverable 2: Determine the Summary Statistics for December**
 
-![](Dec_statistics.png)
+![](https://github.com/Bayan-daux/Surfs_Up/blob/main/Dec_statistics.PNG)
 
 Fig. 2 - December Temperature Statistic
 
