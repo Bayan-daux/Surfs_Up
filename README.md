@@ -1,6 +1,6 @@
-**Surf Up**
+# **Surf Up**
 
-**Project Overview**
+## **Project Overview**
 
 This project is a hypothetical investment opportunity. Where a data analyst performs weather data analysis to predict the possible impact of precipitation and temperature on the profitability of a surf and shake shop in Oahu, Hawaii. The shop would sell surfboards and ice cream for local and tourist. He/she needs an investor backing to get the project started. The data analyst put a strong investment plan and reach out to potential investor. After pitching the plan, the investor asked to see analysis to weather data in Oahu. He/she also informed the data analyst that it would also be interesting to think about the plan longer term, if the shop on Oahu does well, the plan could expand to other islands. Or in case Oahu does not turn out to be a good fit to be able to use the same analysis to test other options.
 
@@ -12,7 +12,7 @@ As the investor like the precipitation analysis, he/she wants more information a
 
 Therefore, two technical analysis deliverables were done.
 
-**Results:**
+## **Results:**
 
 - **Deliverable 1: Determine the Summary Statistics for June**
 
@@ -26,13 +26,13 @@ Fig. 1 - June Temperature Statistic
 
 Fig. 2 - December Temperature Statistic
 
-**Outcomes:**
+## **Outcomes:**
 
 1. The standard deviation for June is lower (3.26) December (3.75) but very slight difference.
 2. Have similar average highs and low temperature in both June (85, 63) and December (83, 56) and the difference between the minimum and maximum for June is (21) which is lower than December (27).
 3. Looking at the number in both month shows that the weather is warm all year round. Which makes it perfect to enjoy the beach or the water almost al year along. Therefore, an ice cream and surf equipment business would have great chance for success.
 
-**Summary**
+## **Summary**
 
 Even though the above results show great potential for the business profitability, there are other aspect of the weather data could be explored and analyzed to give a clearer and more accurate picture. It would worth the time to run the results for all the months and use the same query for precipitation for the same range of dates.
 
