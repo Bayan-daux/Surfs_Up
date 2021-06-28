@@ -16,7 +16,7 @@ Therefore, two technical analysis deliverables were done *(Output File: SurfsUp
 
 - **Deliverable 1: Determine the Summary Statistics for June**
 
-![](Jhttps://github.com/Bayan-daux/Surfs_Up/blob/main/June_statistics.PNG)
+![](https://github.com/Bayan-daux/Surfs_Up/blob/main/June_statistics.PNG)
 
 *Fig. 1 - June Temperature Statistic*
 
@@ -26,7 +26,7 @@ Therefore, two technical analysis deliverables were done *(Output File: SurfsUp
 
 *Fig. 2 - December Temperature Statistic*
 
-## **Outcomes:**
+### **Outcomes:**
 
 1. The standard deviation for June is lower (3.26) December (3.75) but very slight difference.
 2. Have similar average highs and low temperature in both June (85, 63) and December (83, 56) and the difference between the minimum and maximum for June is (21) which is lower than December (27).
