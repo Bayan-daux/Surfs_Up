@@ -6,11 +6,11 @@ This project is a hypothetical investment opportunity. Where a data analyst perf
 
 The investor provides weather measurements from multiple weather stations on Oahu and a across multiple years. SQLite was used to store the weather data and Python, Panda and SQLAlchemy were utilized to run the analysis.
 
-One thing the investor mentioned to take in consideration while doing the analysis is the amount of precipitation on Oahu. There needs to be enough rain to keep everything green, but not so much that would lead to losing out on that ideal surfing and ice cream weather. So, analyzing the perception on chosen 12 months of the dataset was the starting point.
+One thing the investor mentioned to take in consideration while doing the analysis is the amount of precipitation on Oahu. There needs to be enough rain to keep everything green, but not so much that would lead to losing out on that ideal surfing and ice cream weather. So, analyzing the perception on chosen 12 months of the dataset was the starting point. (Output File: climate_analysis.ipynb)
 
 As the investor like the precipitation analysis, he/she wants more information about temperature trends before opening the surf shop. Specifically, he/she wants temperature data for the months of June and December in Oahu, in order to determine if the surf and ice cream shop business is sustainable year-round.
 
-Therefore, two technical analysis deliverables were done.
+Therefore, two technical analysis deliverables were done *(Output File: SurfsUp_Challenge.ipynb)*
 
 ## **Results:**
 
@@ -18,13 +18,13 @@ Therefore, two technical analysis deliverables were done.
 
 ![](Jhttps://github.com/Bayan-daux/Surfs_Up/blob/main/June_statistics.PNG)
 
-Fig. 1 - June Temperature Statistic
+*Fig. 1 - June Temperature Statistic*
 
 - **Deliverable 2: Determine the Summary Statistics for December**
 
 ![](https://github.com/Bayan-daux/Surfs_Up/blob/main/Dec_statistics.PNG)
 
-Fig. 2 - December Temperature Statistic
+*Fig. 2 - December Temperature Statistic*
 
 ## **Outcomes:**
 
