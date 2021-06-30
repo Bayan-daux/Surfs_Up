@@ -34,19 +34,19 @@ Therefore, two technical analysis deliverables were done *(Output File: SurfsUp
 
 ## **Summary**
 
-Even though the above results show great potential for the business profitability, there are other aspect of the weather data could be explored and analyzed to give a clearer and more accurate picture. It would worth the time to run the results for all the months and use the same query for precipitation for the same range of dates.
+Even though the above results show great potential for the business profitability, there are other aspect of the weather data could be explored and analyzed to give a clearer and more accurate picture. It would worth the time to run the results for all the months and use the same query for precipitation for the same range of dates. As in the code and following results:
 
 ```
-# Write a query that filters the Measurement table to retrieve the precipitation for the month of June. 
+
 session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
-# Convert the June precipitation to a list.
 june_rain_results = []
 june_rain_results = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date)==6).all()
-# Create a DataFrame from the list of precipitation for the month of June. 
 df = pd.DataFrame(june_rain_results, columns=['date','June Precipitation'])
-# Sort the dataframe by date
 df.set_index(df['date'], inplace=True)
 df.describe()
 ```
+![](https://github.com/Bayan-daux/Surfs_Up/blob/main/June_Rain_statistics.PNG)
+
+*Fig. 3 - June Precipitation Statistic*
 
 Also depending only on weather data to decide about starting such a business would not be ideal. Other aspect such already establisher competitor worth to be explored.# Surfs Up
